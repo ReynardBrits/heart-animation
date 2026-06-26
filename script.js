@@ -87,7 +87,7 @@ class Particle {
     ctx.strokeStyle = "rgba(255, 20, 80, 0.85)";
     ctx.lineWidth = this.size;
 
-    ctx.shadowBlur = 28;
+    ctx.shadowBlur = 12;
     ctx.shadowColor = "rgba(255, 0, 70, 1)";
 
     ctx.stroke();
@@ -97,7 +97,7 @@ class Particle {
 function createParticles() {
   particles = [];
 
-  for (let i = 0; i < 950; i++) {
+  for (let i = 0; i < 350; i++) {
     particles.push(new Particle(i));
   }
 }
@@ -123,7 +123,7 @@ function animate() {
 
   ctx.shadowBlur = 0;
   ctx.shadowColor = "transparent";
-  ctx.fillStyle = "rgba(0, 0, 0, 0.22)";
+  ctx.fillStyle = "rgba(0, 0, 0, 0.35)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   drawHeartPulse();
