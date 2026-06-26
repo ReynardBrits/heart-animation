@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  position: fixed;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px red, 0 0 30px red;
+}
